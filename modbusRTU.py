@@ -109,7 +109,6 @@ class ModbusRTU:
     def _send_data(self, address, function_code, data):
         frame = bytearray([address, function_code]) + data
         frame += self._calculate_crc(frame)
-        print("Send: ", frame.hex())
         self.uart.write(frame)
 
     def _receive_data(self, address, function_code, expected_length):
@@ -126,9 +125,7 @@ class ModbusRTU:
                 response += self.uart.read(bytes_waiting)
             else:
                 time.sleep(0.01) 
-        
-        print(response.hex())
-        
+                
         if len(response) < expected_length:
             print("Wrong response length") 
             return None
