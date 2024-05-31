@@ -1,3 +1,4 @@
+
 # ModbusRTU Library
 
 ## Overview
@@ -34,15 +35,15 @@ Installation
 To install the ModbusRTU library, you can clone this repository and import the ModbusRTU class into your project.
 ```
 
-##Dependencies
+## Dependencies
 
--Python 3.x
--PySerial
+- Python 3.x
+- PySerial
 
-##Compatibility
+## Compatibility
 
 This library is lightweight and suitable for use with MicroPython and other embedded systems. It has minimal dependencies and is designed to work efficiently in resource-constrained environments.
 
-#License
+## License
 
 This library is licensed under the MIT License.
