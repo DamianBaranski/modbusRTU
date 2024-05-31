@@ -31,9 +31,10 @@ modbus_rtu = ModbusRTU(ser)
 # Example usage
 print(modbus_rtu.read_holding_registers(1, 40001, 2))
 print(modbus_rtu.write_single_register(1, 40001, 12345))
-Installation
-To install the ModbusRTU library, you can clone this repository and import the ModbusRTU class into your project.
 ```
+
+## Installation
+To install the ModbusRTU library, you can clone this repository and import the ModbusRTU class into your project.
 
 ## Dependencies
 
